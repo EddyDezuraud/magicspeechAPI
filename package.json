@@ -1,0 +1,23 @@
+{
+  "name": "magicspeechAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyDezuraud/magicspeechAPI.git"
+  },
+  "author": "Eddy Dezuraud <eddy.dezuraud@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddyDezuraud/magicspeechAPI/issues"
+  },
+  "homepage": "https://github.com/EddyDezuraud/magicspeechAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.1"
+  }
+}
