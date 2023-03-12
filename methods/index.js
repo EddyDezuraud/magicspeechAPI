@@ -29,7 +29,7 @@ const getLang = async (theme) => {
 }
 
 
-const getPrimaryColor = async (theme, lang, eco) => {
+const getPrimaryColor = async (theme, eco) => {
 
     if (eco) return '#FF6666';
 
