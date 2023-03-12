@@ -33,7 +33,7 @@ app.get('/api', async (req, res) => {
 
         if (theme) {
             const lang = getLang(theme);
-            resObj.color = await getPrimaryColor(theme, lang, true);
+            resObj.color = await getPrimaryColor(theme, lang, false);
             resObj.title = await getTitle(theme, lang, true);
             resObj.slides = await getSlides(resObj.title, lang, 5, true);
         }
