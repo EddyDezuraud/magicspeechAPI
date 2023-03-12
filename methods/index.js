@@ -33,7 +33,7 @@ const getPrimaryColor = async (theme, eco) => {
 
     if (eco) return '#FF6666';
 
-    const prompt = "I will ask to you a theme. Your task is to return the color hex code only as response without any phrase. The theme is : " + theme;
+    const prompt = "I will ask to you a theme. Your task is to return a color hex code only as response without any phrase. This color must be AA compliant on a black background. The theme is : " + theme;
     const str = await openAiCall(prompt);
     const hexCode = str.match(/#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/);
     return hexCode[0];

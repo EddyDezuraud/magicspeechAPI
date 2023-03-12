@@ -29,8 +29,8 @@ router.post('/api', async (req, res) => {
         if (theme) {
             const lang = getLang(theme);
             resObj.color = await getPrimaryColor(theme, false);
-            resObj.title = await getTitle(theme, lang, true);
-            resObj.slides = await getSlides(resObj.title, lang, nbSlides, true);
+            resObj.title = await getTitle(theme, lang, false);
+            resObj.slides = await getSlides(resObj.title, lang, nbSlides, false);
         }
 
         res.json(resObj);
